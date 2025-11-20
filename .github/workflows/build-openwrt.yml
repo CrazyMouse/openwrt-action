@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04-16core-64gb-500gb
+    runs-on: ubuntu-20.04-8c-32g-150g
     steps:
     - name: Checkout
       uses: actions/checkout@v4
