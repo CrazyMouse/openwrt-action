@@ -40,7 +40,7 @@ jobs:
     - name: 加载种子配置 + 禁用 rust 源码编译（双保险）
       run: |
         cd openwrt
-        curl -fsSL https://raw.githubusercontent.com/CrazyMouse/openwrt-action/refs/heads/master/my_seed.config?token=GHSAT0AAAAAADNFTBUXCPPJINUZHKVHKXVG2I62YBA > .config
+        curl -fsSL https://raw.githubusercontent.com/CrazyMouse/openwrt-action/refs/heads/master/my_seed.config > .config
         echo -e "\nCONFIG_PACKAGE_rust=n\nCONFIG_PACKAGE_host-rust=n" >> .config
         make defconfig
 
